@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>Interfaces</title>
+    <meta name="description" content="Silver game">
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+	</head>
+	<body onload="load()">
+    <div id="main_window">
+						<div id="navigateButtons">
+            Gold: <span id="gold">0</span><br />
+            Digger [Gold/sec]: <span id="digger">0</span><br />
+            Wife [Diggers/sec]: <span id="wife">0</span><br />
+						</div>
+            <BR>
+						<BR>
+						<button onclick="cookieClick()" id="buttonClick">Click</button><br>
+						<button onclick="buyDigger()" id="buttonBuyDigger">Buy Digger</button><br>
+						<button onclick="buyDiggerWife()" id="buttonBuyDiggerWife">Buy Digger Wife</button><br>
+						<br><br>
+
+						<canvas id="myCanvas" width="640" height="480" style="border:1px solid #000000;"></canvas>
+
+						<br><br>
+						<button onClick="remove_save()"> Restart </button>
+
+    </div>
+		<script type="text/javascript" src="world.js" charset="utf-8"></script>
+		<script type="text/javascript" src="main.js" charset="utf-8"></script>
+	</body>
+</html>
